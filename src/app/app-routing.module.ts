@@ -12,6 +12,11 @@ import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
     {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    {
         path: 'category',
         component: CategoryComponent
     },
@@ -28,7 +33,7 @@ const routes: Routes = [
         component: MycartComponent
     },
     {
-        path: 'not-found',
+        path: '**',
         component: NotFoundComponent
     },
     {
